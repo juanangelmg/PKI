@@ -1,7 +1,11 @@
-- Lo descrito en este documento es requisito para que las entidades puedan ser declaradas como confiables e incorporar su/s certificados raíz a software ampliamente distribuido (ej. browsers). 
+- Lo descrito en este documento es requisito para que las entidades puedan ser declaradas como confiables 
+e incorporar su/s certificados raíz a software ampliamente distribuido (ej. browsers). 
 
 - Aplican a todos los certificados de subCA y certificados de entidad final que están bajo las CA raíz.
 
-- Las CP (políticas de certificación) y las CPS (declaración de prácticas de certificación) han de tener el formato declarado en el RFC 3647. Este RFC tiene un índice con los puntos que deben estar cubiertos por las políticas y las prácticas y lo que se debe declarar en ellos.
+- Las CP (políticas de certificación) y las CPS (declaración de prácticas de certificación) han de tener 
+el formato declarado en el RFC 3647. Este RFC tiene un índice con los puntos que deben estar cubiertos por 
+las políticas y las prácticas y lo que se debe declarar en ellos.
 
-- Estos requisitos aplican a certificados de servidor. En el futuro podrán incorporarse los de S/MIME,… y serán similares a los descritos en este documento.
+- Estos requisitos aplican a certificados de servidor. En el futuro podrán incorporarse los de S/MIME,… y 
+serán similares a los descritos en este documento.
