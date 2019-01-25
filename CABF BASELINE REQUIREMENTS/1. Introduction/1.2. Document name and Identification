@@ -1,0 +1,4 @@
+Para declarar que se cumplen los requisitos pueden incluirse los siguientes OIDs de política en los certificados:
+2.23.140.1.2.1 - Para los DV (Domain Validated)
+2.23.140.1.2.2 - Para los OV (Organization Validated)
+2.23.140.1.2.3 - Para los IV (Individual Validated)
