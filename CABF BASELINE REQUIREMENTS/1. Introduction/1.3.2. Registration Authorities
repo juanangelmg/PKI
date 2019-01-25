@@ -1,0 +1,24 @@
+Siempre que se cumplan en conjunto los requisitos del punto 3.2 INITIAL IDENTITY VALIDATION una CA puede delegar a una tercera parte 
+delegada (TTP Trusted Third Party) todas o parte de las validaciones iniciales de identidad excepto las de:
+- Validation of Domain Authorization or Control
+- Authentication for an IP Address
+
+Antes de que una CA autorice a una TTP realizar tareas la CA DEBE requirir contractualmente a la TTP:
+(1) Cumplir con los requisitos que se describen en el punto 5.3.1 
+(2) Almacenar la documentación según lo descrito en el punto 5.3.2
+(3) Cumplir con las demás disposiciones de estos BR aplicables a la función delegada; y
+(4) Cumplir con las CPS/CP de la CA o con las CPS de la propia TTP que deben cumplir con estos BR.
+
+Las CAs PUEDEN diseñar unas Enterprise RA para verificar las solicitudes de certificados de la propia organización de la Enterprise RA.
+
+Pero las CAs NO PUEDEN aceptar peticiones de certificados de Enterprise RAs a menos que se cumpla que:
+(1) La CA confirma que el Fully-Qualified Domain Name (FQDN) de la solicitud pertenece al Domain Namespace del que es propietario la 
+Enterprise RA y que ha sido verificado.
+(2) Si incluye un Subject name (CN) que no sea un FQDN la CA DEBE confirmar que dicha información es de la Enterprise RA, o de un 
+afiliado suyo, o que la el propietario de la Enterprise RA es un agente de la que aparece en el CN.
+
+Ej. La CA NO emitirá un certificado que contenga el CN "XYZ S.A." de la Enterprise RA "ABC S.A.", a menos que las dos empresas estén 
+afiliadas (véase el apartado 3.2) o "ABC S.A." sea un agente de "XYZ S.A.".  Este requisito se aplica independientemente de si el FQDN 
+que lo acompaña cae dentro del Domain Namespace del Domain Namespace registrado por "ABC S.A."
+
+La CA DEBE imponer estas limitaciones a las Enterprise RAs y monitorizar su cumplimiento.
